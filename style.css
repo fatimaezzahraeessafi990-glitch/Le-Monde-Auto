@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url("https://images.unsplash.com/photo-1503376780353-7e6692767b70")
+    no-repeat center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0,0,0,0.9);
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(49, 202, 125);
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(15, 155, 137);
+}
+
+/* auto */
+.auto h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+/* car */
+.car {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
+
+.car-card {
+    background: rgba(25, 25, 27, 0.75);
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.car-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* DETAILS */
+.details-box {
+    display: none;
+    background: rgba(0,0,0,0.85);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact-box {
+    background: linear-gradient(135deg, rgba(20, 50, 92, 0.9), rgba(7, 84, 37, 0.8));
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, button {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    background: black;
+    color: rgb(24, 174, 109);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 15px;
+}

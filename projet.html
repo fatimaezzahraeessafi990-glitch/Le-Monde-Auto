@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="fatima ezzahrae essafi ">
+    <meta name="description" content="Découvrez nos voitures soigneusement sélectionnées pour vous offrir confort, performance et tranquillité d’esprit.">
+    <meta name="keywords" content="voiture,achat voiture,voiture occasion,location auto">
+    <title>Le Monde Auto</title>
+    <link rel="icon" href="iccons/car.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">Le Monde Auto</div>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#voitures">Voitures</a>
+        <a href="#contact">Nous contacter</a>
+    </nav>
+</header>
+
+<section id="accueil" class="section auto">
+    <h1>La passion de l’automobile commence ici</h1>
+    <p>Explorez un univers où chaque voiture raconte une histoire d’exception,
+         des performances uniques et des prix transparents.</p>
+</section>
+
+<section id="voitures" class="section">
+    <h2>Nos voitures</h2>
+
+    <div class="car">
+
+        <div class="car-card" onclick="showCar(
+            'Ferrari SF90',
+            'La Ferrari SF90 est une supercar hybride d’exception qui incarne parfaitement la puissance et l’innovation italienne. Équipée d’un moteur V8 associé à des moteurs électriques, elle offre des performances impressionnantes tout en conservant un design luxueux et moderne. Cette voiture est destinée aux passionnés de vitesse à la recherche d’une expérience de conduite unique et exclusive.'
+            '450 000 €'
+        )">
+            <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16">
+            <h3>Ferrari SF90</h3>
+            <strong>450 000 €</strong>
+        </div>
+
+        <div class="car-card" onclick="showCar(
+            'Mercedes AMG GT',
+            ' La Mercedes-AMG GT est une voiture sportive de luxe qui allie élégance, puissance et confort. Dotée d’un moteur V8 performant, elle offre une conduite dynamique et précise, aussi bien sur route que sur circuit. Son design raffiné et son intérieur haut de gamme en font un choix idéal pour les amateurs de sport automobile et de prestige.',
+            '180 000 €'
+        )">
+            <img src="https://www.kbb.com/wp-content/uploads/2015/01/2016-mercedes-amg-gt-front-static8-600-001.jpg">
+            <h3>Mercedes AMG GT</h3>
+            <strong>180 000 €</strong>
+        </div>
+
+        <div class="car-card" onclick="showCar(
+            'BMW M4',
+            'La BMW M4 est un coupé sportif haut de gamme conçu pour offrir des performances exceptionnelles et une conduite précise. Grâce à son moteur puissant et à son châssis optimisé par BMW Motorsport, elle garantit des sensations fortes tout en conservant un excellent niveau de confort. Son design moderne et agressif reflète parfaitement son caractère sportif.',
+            '120 000 €'
+        )">
+            <img src="https://carimages.d2cmedia.ca/newcarimages/fr/cb6973e8923f9af/BMW/M4/2025/2100/454247/White/front45.png">
+            <h3>BMW M4</h3>
+            <strong>120 000 €</strong>
+        </div>
+
+        <div class="car-card" onclick="showCar(
+            'Lamborghini Huracan',
+            'La Lamborghini Huracan est une supercar emblématique qui se distingue par son design audacieux et son moteur V10 atmosphérique. Elle offre des performances impressionnantes et une expérience de conduite intense, accompagnée d’un son moteur unique. Ce modèle est destiné aux passionnés de voitures de prestige recherchant puissance, exclusivité et sensations fortes.',
+            '320 000 €'
+        )">
+            <img src="https://cdn.motor1.com/images/mgl/kNREB/s3/lamborghini-huracan-sto.jpg">
+            <h3>Lamborghini Huracan</h3>
+            <strong>320 000 €</strong>
+        </div>
+
+    </div>
+
+    <div id="car-details" class="details-box">
+        <h3 id="car-name"></h3>
+        <p id="car-desc"></p>
+        <strong id="car-price"></strong>
+    </div>
+
+</section>
+
+
+<section id="contact" class="section contact-box">
+    <h2>Contactez-nous</h2>
+    <p>Un conseiller automobile est à votre écoute</p>
+
+    <form id="contactForm">
+        <input type="text" placeholder="Entrer votre Nom" required>
+        <input type="text" placeholder="Entrer votre Prénom" required>
+        <input type="email" placeholder="Entrer votre Email" required>
+        <input type="tel" placeholder="Entrer votre Téléphone" required>
+        <button type="submit">Envoyer la demande</button>
+    </form>
+
+    <p id="message"></p>
+</section>
+
+<footer>
+    © 2026 Le Monde Auto
+</footer>
+
+
+</body>
+</html>
+
